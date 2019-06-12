@@ -5,9 +5,9 @@ Create a function that, given a list of invoices (inv) and subscribers (sub), wo
 ## Example Input
 
 sub = [  
-   {'id': 1, 'subscription_type': "first-tier", 'subscription_date': "May 1 2019", 'name': "Patti Smith"},  
-   {'id': 2, 'subscription_type': "second-tier", 'subscription_date': "Feb 15 2019", 'name': "George Clinton"},  
-   {'id': 3, 'subscription_type': "third-tier", 'subscription_date': "June 1 2019", 'name': "Ellen Page"}  
+   {'id': 1, 'subscription_type': "first-tier", 'subscription_date': "May 1 2019", 'name': "Patti Smith", 'email': "pattis@gmail.com"},  
+   {'id': 2, 'subscription_type': "second-tier", 'subscription_date': "Feb 15 2019", 'name': "George Clinton", 'email': "pfunk@gmail.com"},  
+   {'id': 3, 'subscription_type': "third-tier", 'subscription_date': "June 1 2019", 'name': "Ellen Page", 'email': "ellen.page@gmai.com"}  
 ]  
 
 inv = [  
@@ -18,4 +18,7 @@ inv = [
 
 ## Example Output
 
-["George Clinton", "Ellen Page"]
+[
+   {id: 1, subscription_type: "first-tier", subscription_date: "May 1 2019", name: "Patti Smith", email: "pattis@gmail.com"},
+   {id: 2, subscription_type: "second-tier", subscription_date: "Feb 15 2019", name: "George Clinton", email: "pfunk@gmail.com"}
+]
