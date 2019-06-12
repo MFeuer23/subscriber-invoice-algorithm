@@ -1,10 +1,13 @@
 function cancellationNotice(sub, inv) {
   let today = new Date();
-  let overdueNames = [];
+  let overdueIds = [];
+
   for (let i = 0; i < inv.length; i++) {
     if (today > new Date(inv[i]["due_date"]) && !inv[i]["payment_date"]) {
-      overdueNames.push(sub[inv[i]["subscriber_id"]]["name"])
+      overdueIds.push(inv[i]["subscriber_id"])
     }
   }
-  return overdueNames
+  
+  let overdueSubscribers = sub.filter(subscriber => overdueIds.includes(subscriber.id))
+  return overdueSubscribers
 }
