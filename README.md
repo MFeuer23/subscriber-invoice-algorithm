@@ -15,3 +15,7 @@ inv = [
    {'id': 2, 'subscriber_id': 2, 'due_date': "March 15 2019", 'payment_date': null, 'amount': 150},  
    {'id': 3, 'subscriber_id': 3, 'due_date': "July 1, 2019", 'payment_date': null, 'amount': 100}  
 ]  
+
+## Example Output
+
+["George Clinton", "Ellen Page"]
