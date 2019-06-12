@@ -8,19 +8,19 @@ sub = [
   { 
     'id': 1,
     'subscription_type': "first-tier",
-    'subscription_date': "May 1 2019"
+    'subscription_date': "May 1 2019",
     'name': "Patti Smith"
   },
   { 
     'id': 2,
     'subscription_type': "second-tier",
-    'subscription_date': "Feb 15 2019"
+    'subscription_date': "Feb 15 2019",
     'name': "George Clinton"
   },
   { 
     'id': 3,
     'subscription_type': "third-tier",
-    'subscription_date': "June 1 2019"
+    'subscription_date': "June 1 2019",
     'name': "Ellen Page"
   }
 ]
